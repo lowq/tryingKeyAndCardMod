@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{4AD46C626F47A593}evg_customKeycards/Data/ImageSets/keycardImageSet.edds"
+ Author "lowner-evgenyn"
+ ChangeDate -783766222
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "keycardImageSet.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}
