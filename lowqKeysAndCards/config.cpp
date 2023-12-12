@@ -73,13 +73,17 @@ class CfgMods
 };
 class CfgVehicles {
 	class Inventory_Base;
+	class CRDTN_LockedDoors_ItemBase;
 	class lowq_key_base: CRDTN_LockedDoors_ItemBase
 	{
 		scope=0;
+		displayName="KeyBase";
+		descriptionShort="Key Base";
 		model="lowqKeysAndCards\Data\Key\simple_key.p3d";
 		rotationFlags=17;
-        quantityBar = 1;
-        canBeSplit=0;
+		RestrainUnlockType=0;
+		weight=4;
+		fragility=0.0099999998;
 		itemSize[]={1,1};
 		hiddenSelections[]=
 		{
@@ -91,7 +95,7 @@ class CfgVehicles {
 	class lowq_keycards_base: CRDTN_LockedDoors_ItemBase
 	{
 		scope=1;
-		model="evg_customKeycards_V3\Data\Keycards\keyCard.p3d";
+		model="lowqKeysAndCards\Data\Keycards\keyCard.p3d";
 		hiddenSelections[]=
 		{
 			"keycard"
